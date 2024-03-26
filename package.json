@@ -1,0 +1,16 @@
+{
+  "name": "tdesign-tiptap-docs",
+  "version": "0.3.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.1"
+  }
+}
