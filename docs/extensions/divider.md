@@ -1,6 +1,6 @@
-# 粗体
+# 菜单栏分隔符
 
-使用此扩展添加 `strong` 标签
+使用此扩展分割菜单，可多次引入
 
 ## 使用
 
@@ -10,27 +10,15 @@
 </template>
 
 <script setup>
-import { TTiptap, EditorConfig, Bold } from "tdesign-tiptap";
+import { TTiptap, EditorConfig, Divider } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  buttonExtensions: [Bold],
+  buttonExtensions: [Divider],
 });
 </script>
 ```
 
 ## 配置
-
-#### HTMLAttributes
-
-为渲染的标签添加自定义属性，默认值：`{}`
-
-```js
-Bold.configure({
-  HTMLAttributes: {
-    class: 'custom-class',
-  },
-})
-```
 
 #### bar
 

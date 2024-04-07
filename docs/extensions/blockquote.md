@@ -13,7 +13,7 @@
 import { TTiptap, EditorConfig, Blockquote } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [Blockquote],
+  buttonExtensions: [Blockquote],
 });
 </script>
 ```
@@ -26,7 +26,7 @@ const editor = new EditorConfig({
 ```js
 Blockquote.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```

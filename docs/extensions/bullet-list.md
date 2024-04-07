@@ -1,6 +1,10 @@
 # 无序列表
 
 使用此扩展添加 `ul` 标签
+ 
+::: warning 注意
+此扩展依赖于基础扩展 [ListItem](/extensions/list-item.html)
+:::
 
 ## 使用
 
@@ -10,10 +14,11 @@
 </template>
 
 <script setup>
-import { TTiptap, EditorConfig, BulletList } from "tdesign-tiptap";
+import { TTiptap, EditorConfig, ListItem, BulletList } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [BulletList],
+  baseExtensions:[ListItem],
+  buttonExtensions: [BulletList],
 });
 </script>
 ```
@@ -27,7 +32,7 @@ const editor = new EditorConfig({
 ```js
 BulletList.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```

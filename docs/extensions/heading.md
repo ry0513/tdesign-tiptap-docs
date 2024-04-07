@@ -13,7 +13,7 @@
 import { TTiptap, EditorConfig, Heading } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [Heading],
+  buttonExtensions: [Heading],
 });
 </script>
 ```
@@ -26,8 +26,18 @@ const editor = new EditorConfig({
 ```js
 Heading.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
+})
+```
+
+### group
+
+是否使用下拉，默认值：`true`
+
+```js
+Heading.configure({
+  group: true
 })
 ```
 
@@ -53,10 +63,10 @@ Heading.configure({
 
 ### levels
 
-标题等级，默认值：[1, 2, 3]
+标题等级，默认值：['h1', 'h2', 'h3']
 
 ```js
 Heading.configure({
-  levels: [1, 2, 3, 4, 5, 6] // 即 h1-h6
+  levels: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 })
 ```

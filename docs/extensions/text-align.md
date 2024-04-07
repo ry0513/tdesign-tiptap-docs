@@ -13,7 +13,7 @@
 import { TTiptap, EditorConfig, TextAlign } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [TextAlign],
+  buttonExtensions: [TextAlign],
 });
 </script>
 ```

@@ -1,4 +1,4 @@
-# 安装
+# 快速开始
 
 ## 安装
 
@@ -12,17 +12,33 @@ pnpm install tdesign-tiptap
 
 ```vue
 <template>
-  <t-tiptap v-model="content" :extensions="extensions" />
+  <t-tiptap :editor="editor" />
 </template>
 
 <script lang="ts" setup>
-// 导入组件与样式
-import { TTiptap, EditorConfig, Bold, Italic, Strike, Underline } from "tdesign-tiptap";
+import { onBeforeUnmount } from "vue";
+import {
+  TTiptap,
+  EditorConfig,
+  TextStyle,
+  ListItem,
+  Bold,
+  Italic,
+  Strike,
+  Underline,
+  Blockquote,
+} from "tdesign-tiptap";
 import "tdesign-tiptap/lib/style.css";
+
 const editor = new EditorConfig({
   content: `<p>tdesign-tiptap</p>`,
-  extensions: [ Bold, Italic, Strike, Underline ],
+  baseExtensions: [TextStyle, ListItem],
+  buttonExtensions: [Bold, Italic, Strike, Underline, Blockquote],
 });
+
+onBeforeUnmount(() => {
+  editor.destroy();
+})
 </script>
 ```
 

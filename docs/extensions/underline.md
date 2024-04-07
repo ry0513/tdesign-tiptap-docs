@@ -13,7 +13,7 @@
 import { TTiptap, EditorConfig, Underline } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [Underline],
+  buttonExtensions: [Underline],
 });
 </script>
 ```
@@ -26,7 +26,7 @@ const editor = new EditorConfig({
 ```js
 Underline.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```

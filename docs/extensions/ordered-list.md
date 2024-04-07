@@ -2,6 +2,10 @@
 
 使用此扩展添加 `ol` 标签
 
+::: warning 注意
+此扩展依赖于基础扩展 [ListItem](/extensions/list-item.html)
+:::
+
 ## 使用
 
 ``` vue
@@ -10,10 +14,11 @@
 </template>
 
 <script setup>
-import { TTiptap, EditorConfig, OrderedList } from "tdesign-tiptap";
+import { TTiptap, EditorConfig, ListItem, OrderedList } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [OrderedList],
+  baseExtensions:[ListItem],
+  buttonExtensions: [BulletList],
 });
 </script>
 ```
@@ -27,7 +32,7 @@ const editor = new EditorConfig({
 ```js
 OrderedList.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```

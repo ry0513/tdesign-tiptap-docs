@@ -13,7 +13,7 @@
 import { TTiptap, EditorConfig, Code } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [Code],
+  buttonExtensions: [Code],
 });
 </script>
 ```
@@ -26,7 +26,7 @@ const editor = new EditorConfig({
 ```js
 Code.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```

@@ -31,7 +31,7 @@ const editor = new EditorConfig({
 ```js
 CodeBlockLowlight.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```
@@ -55,3 +55,43 @@ CodeBlockLowlight.configure({
   bubble: true
 })
 ```
+
+#### lowlight
+
+高亮代码，默认使用 lowlight
+
+```js
+CodeBlockLowlight.configure({
+  lowlight: lowlight
+})
+```
+#### languages
+
+语言列表，默认：`["plaintext", "javascript", "java"]`
+
+```js
+CodeBlockLowlight.configure({
+  languages:["js","ts"]
+})
+```
+
+#### languageClassPrefix
+
+代码语言前缀，默认值：`language-`
+
+```js
+CodeBlockLowlight.configure({
+  languageClassPrefix: "language-"
+})
+```
+
+#### defaultLanguage
+
+默认的代码语言，默认值：`plaintext`
+
+```js
+CodeBlockLowlight.configure({
+  defaultLanguage: "plaintext"
+})
+```
+

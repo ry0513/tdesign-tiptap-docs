@@ -13,7 +13,7 @@
 import { TTiptap, EditorConfig, Italic } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [Italic],
+  buttonExtensions: [Italic],
 });
 </script>
 ```
@@ -26,7 +26,7 @@ const editor = new EditorConfig({
 ```js
 Italic.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```

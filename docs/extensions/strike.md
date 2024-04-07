@@ -13,7 +13,7 @@
 import { TTiptap, EditorConfig, Strike } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [Strike],
+  buttonExtensions: [Strike],
 });
 </script>
 ```
@@ -27,7 +27,7 @@ const editor = new EditorConfig({
 ```js
 Strike.configure({
   HTMLAttributes: {
-    class: 'my-custom-class',
+    class: 'custom-class',
   },
 })
 ```

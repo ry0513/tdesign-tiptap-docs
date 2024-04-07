@@ -2,6 +2,10 @@
 
 使用此扩展添加 `color` 样式
 
+::: warning 注意
+此扩展依赖于基础扩展 [TextStyle](/extensions/text-style.html)
+:::
+
 ## 使用
 
 ``` vue
@@ -10,10 +14,11 @@
 </template>
 
 <script setup>
-import { TTiptap, EditorConfig, Color } from "tdesign-tiptap";
+import { TTiptap, EditorConfig, TextStyle, Color } from "tdesign-tiptap";
 const editor = new EditorConfig({
   content: "<p>Tdesign-tiptap</p>",
-  extensions: [Color],
+  baseExtensions: [TextStyle],
+  buttonExtensions: [Color],
 });
 </script>
 ```

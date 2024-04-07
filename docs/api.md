@@ -10,6 +10,22 @@ editor.getTiptap()
 
 ## getExtensions
 
+获取已注册的基础扩展
+
+```js
+editor.getExtensions()
+```
+
+## getExtensions
+
+获取已注册的功能扩展
+
+```js
+editor.getExtensions()
+```
+
+## getExtensions
+
 获取已注册的扩展
 
 ```js
@@ -18,7 +34,7 @@ editor.getExtensions()
 
 ## getHTML
 
-获取 HTML
+获取 HTML 内容
 
 ```js
 editor.getHTML()
@@ -26,7 +42,7 @@ editor.getHTML()
 
 ## getJSON
 
-获取 JSON
+获取 JSON 内容
 
 ```js
 editor.getJSON()
@@ -34,7 +50,7 @@ editor.getJSON()
 
 ## getText
 
-获取文本
+获取文本内容
 
 ```js
 editor.getText()
@@ -62,6 +78,14 @@ editor.getImageList()
 
 ```js
 editor.getLinkList()
+```
+
+## setContent
+
+初始化后修改内容
+
+```js
+editor.setContent()
 ```
 
 ## 其他
